@@ -5,7 +5,7 @@ const TestimonialColumnLight: FunctionComponent = () => {
     <div className={styles.testimonialColumnLight}>
       <div className={styles.titleParent}>
         <b className={styles.title}>Testimonial section</b>
-        <article className={styles.columns}>
+        <div className={styles.columns}>
           <div className={styles.column}>
             <div className={styles.content}>
               <div className={styles.quote}>
@@ -72,7 +72,7 @@ const TestimonialColumnLight: FunctionComponent = () => {
               </div>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   );

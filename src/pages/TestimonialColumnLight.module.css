@@ -65,14 +65,13 @@
 }
 .column {
   width: 298.67px;
+  height: 313px;
 }
 .columns {
   align-self: stretch;
-  height: 313px;
+  height: 377px;
   display: flex;
   flex-direction: row;
-  padding: 26px 0 0;
-  box-sizing: border-box;
   align-items: flex-start;
   justify-content: center;
   gap: 32px;
@@ -83,14 +82,13 @@
 .titleParent {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   align-items: center;
+  justify-content: flex-start;
 }
 .titleParent {
   align-self: stretch;
-  height: 391px;
   padding: 0 var(--padding-5xl);
-  justify-content: space-between;
+  gap: 40px;
 }
 .testimonialColumnLight {
   position: relative;
@@ -98,7 +96,7 @@
   width: 100%;
   overflow: hidden;
   padding: 64px 0;
-  justify-content: flex-start;
+  box-sizing: border-box;
   text-align: center;
   font-size: 32px;
   color: var(--color-black);
@@ -106,8 +104,11 @@
 }
 @media screen and (max-width: 760px) {
   .columns {
+    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 30px;
+    box-sizing: border-box;
   }
 }
